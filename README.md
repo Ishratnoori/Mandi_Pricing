@@ -47,18 +47,7 @@ Mandi_Pricing/
 └─ tsconfig.json
 ```
 
----
 
-## 🔌 Data Sources (typical)
-
-> Adjust to match your implementation.
-
-* **Mandi Prices**: Agmarknet / eNAM / data.gov.in API (Govt of India commodity prices)
-* **Weather**: OpenWeatherMap (Current Weather API)
-* **News**: NewsAPI / gnews / other agri‑news feeds
-* **Geocoding/Maps**: HTML5 Geolocation + Google Maps link for directions
-
----
 
 ## 🚀 Getting Started
 
@@ -87,11 +76,7 @@ pnpm build
 pnpm start
 ```
 
-### Lint (if configured)
 
-```bash
-pnpm lint
-```
 
 ---
 
