@@ -11,11 +11,9 @@ A Next.js (App Router) web app that helps farmers and traders quickly find **liv
 * **Smart Search**: Enter your **state** and **crop** (e.g., “Rice”) to fetch the best nearby mandi price.
 * **Auto Location Hint**: Detects your location (permission-based) to pre-fill the nearest state/area.
 * **Live Mandi Prices Table**: See **Min / Max / Modal** prices (₹/Quintal), mandi name, and one‑click **Directions**.
-* **Weather Snapshot**: Local current weather (temperature, conditions) to plan market trips.
-* **Agri News Feed**: Headlines relevant to agriculture, policy updates, and commodity trends.
 * **Clean UI**: TypeScript, Tailwind CSS, shadcn/ui components, responsive and accessible.
 
-> UI strings seen in the current build: *Farmer's Portal, Mandi Prices, Weather, News, Smart Search, Your Location, Crop, Live Mandi Crop Prices, Directions.*
+> UI strings seen in the current build: *Farmer's Portal, Mandi Prices, Smart Search, Your Location, Crop, Live Mandi Crop Prices, Directions.*
 
 ---
 
@@ -78,33 +76,6 @@ pnpm start
 
 
 
----
-
-## 🔐 Environment Variables
-
-Create a `.env.local` in the project root. Example:
-
-```bash
-# Price API (choose one that you use)
-AGMARKNET_API_KEY=""
-PRICE_API_BASE_URL="https://api.data.gov.in/resource/<resource-id>"
-
-# Weather
-OPENWEATHER_API_KEY=""
-
-# News
-NEWS_API_KEY=""
-
-# Maps (for any server-side geocoding or advanced maps)
-NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=""
-
-# CORS proxy (only if you’re using one; avoid in production when possible)
-NEXT_PUBLIC_PROXY_URL=""
-```
-
-Update `lib/` clients to read from these keys. On **Vercel**, set the same variables in *Project Settings → Environment Variables* and redeploy.
-
----
 
 ## 🧭 How It Works
 
